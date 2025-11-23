@@ -1,0 +1,14 @@
+- name: Demo Playbook
+  hosts: local
+  tasks:
+    - name: Create a test file
+      copy:
+        dest: /tmp/hello.txt
+        content: "Hello from Ansible on WSL!"
+    - name: Display file content
+      command: cat /tmp/hello.txt
+      register: file_output
+
+    - name: Show output
+      debug:
+        var: file_output.stdout
