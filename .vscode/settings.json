@@ -1,0 +1,9 @@
+{
+  "ansible.ansiblePath": "/usr/bin/ansible",
+  "ansible.lintPath": "/usr/bin/ansible-lint",
+  "ansible.python.interpreterPath": "/usr/bin/python3",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.yml": "ansible"
+  }
+}
